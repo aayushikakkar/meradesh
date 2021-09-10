@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./images/flag.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+header{
+   background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.1));
+    width: 100%;
+    height: 100%;
+ 
+}
+
+
+dropdown_content{
+
+    display: none;
+    position: absolute;
+    background-color: darkgreen;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px 0px;
+    min-height: 100px;
+    z-index: 1;
+}   
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content a:hover {background-color: rgb(57, 22, 155);}  
+
+nav{
+    width: 100%;
+    height: 15vh;
+    background: rgba(0,0,0,0.3);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+nav .logo{
+    width: 25%;
+    text-align: center;
+  
+}
+
+nav .logo:hover{
+    color: darkblue;
+}
+
+nav .menu{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav .menu a{
+    width: 25%;
+    text-decoration: none;
+    color:white;
+    font-weight: bold;
+}
+
+nav .menu a:hover{
+    color: darkblue;
+}
+
+/*          nav .menu a:first-child{
+             color: black;
+                                    }                                               */
+
+main{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:black;
+}
+section{
+  
+}
+
+section h3{
+    font-size: 50px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px black;
+    
+}
+
+section h1{
+    margin: 30px 0 20px 0;
+    font-size: 50px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+
+}
+section p{
+    font-size: 40px;
+    color:darkblue;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+}
+
+section a{
+    padding: 12px 30px; 
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 650;
+    text-decoration: underline;
+    letter-spacing: 1px;
+    transition: all .5s ease;
+    
+    
+}
+
+ 
+
+section .btnone{
+    background:white;
+    color:darkblue;
+}
+
+.btnone:hover{
+    background: darkblue;
+    color: white;
+}
+section .btntwo{
+    background:darkblue;
+    color:white;
+}
+.btntwo:hover{
+    background: white;
+    color: darkblue;
+}
+
+.change_content::after{
+    content: '';
+    animation: changetext 8s infinite linear;
+    color:white;
+}
+
+
+ul{
+    float:right;;
+    justify-content: space-between;
+    padding-top: 100px;
+
+}
+
+/*dropdown_content{
+
+    display: none;
+    position: absolute;
+    background-color: darkgreen;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px 0px;
+    min-height: 100px;
+    z-index: 1;
+}   */
+@keyframes changetext{
+    0%{content: " Darjeeling";}
+    20%{content: " Agra";}
+    30%{content: " Kerela";}
+    50%{content: " Delhi";}
+    65%{content: " Jaipur";}
+    80%{content: " Mumbai";}
+    90%{content: " Gujarat";}
+    100%{content: " Goa";}
+}
